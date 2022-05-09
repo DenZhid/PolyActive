@@ -29,6 +29,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
         binding.buttonSignInLogin.setOnClickListener {
             findNavController().navigate(R.id.from_login_to_feed)
+            (requireActivity() as AppCompatActivity).supportActionBar?.show()
         }
     }
 }
