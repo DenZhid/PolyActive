@@ -16,7 +16,7 @@ class FeedViewModel(application: Application) : AndroidViewModel(application) {
             val plugList = ArrayList<News>()
             plugList.addAll(NewsService.getPostsFromGroup(VkGroups.ADAPTERS, 2))
             plugList.addAll(NewsService.getPostsFromGroup(VkGroups.PROF, 2))
-//            plugList.addAll(NewsService.getPostsFromGroup(VkGroups.STUD_BRIGADES, 2))
+            plugList.addAll(NewsService.getPostsFromGroup(VkGroups.STUD_BRIGADES, 2))
             newsLiveData.value = plugList
         }
     }
